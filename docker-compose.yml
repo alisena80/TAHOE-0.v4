@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  file_transfer:
+    image: amazonlinux:latest
+    volumes:
+      - '../tahoe:/v${TAHOE_VERSION}/tahoe' # bind mount
+      - 'tahoe-volume:/target' # docker volume to copy bind mount files into
+    command: cp -r -n --parents /v${TAHOE_VERSION}/tahoe /target
+  deploy:
+    build:
+      context: .
+      args:
+        SSL: ${TAHOE_LLNL_SSL}
+    environment:
+      AWS_PROFILE: ${AWS_PROFILE}
+      AWS_CONFIG_FILE: /home/.aws/config
+      AWS_SHARED_CREDENTIALS_FILE: /home/.aws/credentials
+    image: tahoe-deploy:0.0.1
+    tty: true
+    depends_on:
+      - file_transfer
+    volumes:
+      - 'tahoe-volume:/cdk-launch'
+      - '~/.aws:/home/.aws' # bind mount aws keys
+  dev:
+    depends_on:
+      - file_transfer
+    build: 
+      context: ./dev
+      args:
+        SSL: ${TAHOE_LLNL_SSL}
+    environment:
+      DISABLE_SSL: ${TAHOE_DEV_DISABLE_SSL}
+      AWS_PROFILE: ${AWS_PROFILE}
+      AWS_CONFIG_FILE: /home/glue_user/.aws/config
+      AWS_SHARED_CREDENTIALS_FILE: /home/glue_user/.aws/credentials
+    tty: true
+    image: tahoe-dev:0.0.1
+    volumes:
+      - 'tahoe-volume:/home/glue_user/workspace/jupyter_workspace'
+      - '~/.aws:/home/glue_user/.aws' # bind mount aws keys
+    command: /home/glue_user/jupyter/jupyter_start.sh
+    ports:
+      - ${SPARK_UI_PORT}:4040
+      - ${SPARK_HISTORY_PORT}:18080
+      - ${SPARK_LIVY_PORT}:8998
+      - ${NOTEBOOK_PORT}:8888
+volumes:
+  tahoe-volume:

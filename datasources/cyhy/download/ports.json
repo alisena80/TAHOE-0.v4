@@ -1,0 +1,50 @@
+{
+    "_id": "601901e75de7cb7db35ba461",          # Assessment ID
+    "ip": "5.219.206.137",                      # IP address that was scanned
+    "ip_int": 98291337,                         # Integer version of IP address
+    "latest": true,                             # Is this the latest scan of the host?
+    "owner": "org9",                            # Org that claims IP address
+    "port": 80,                                 # Number of port that was scanned
+    "protocol": "tcp",                          # Protocol for scan (tcp/udp)
+    "reason": "syn-ack",                        # Why is port determined to be open?
+    "service": {                                # Details about port
+        "conf": "10",                          
+        "cpe": [
+            "cpe:/a:apache:http_server:2.4.41"  # CPE derived from IP address
+        ],
+        "hostname": "5.219.206.137",            # Hostname, if detected
+        "method": "probed",                     # ?
+        "name": "http",                         # Type of host detected
+        "product": "Apache httpd",              # Product name
+        "version": "2.4.41"                     # Product version
+    },
+    "snapshots": [],                            # Snapshots that include this scan
+    "source": "nmap",                           # Source of scan
+    "state": "open",                            # State of port
+    "time": "2021-02-02 07:37:47"               # Time of scan
+}{
+    "_id": "601901e75de7cb7db35ba462",
+    "ip": "200.115.5.237",
+    "ip_int": 3362981357,
+    "latest": true,
+    "owner": "org4",
+    "port": 443,
+    "protocol": "tcp",
+    "reason": "syn-ack",
+    "service": {
+        "conf": "10",
+        "cpe": [
+            "cpe:/a:apache:http_server:2.4.41"
+        ],
+        "extrainfo": "(Ubuntu)",
+        "method": "probed",
+        "name": "http",
+        "product": "Apache httpd",
+        "tunnel": "ssl",
+        "version": "2.4.41"
+    },
+    "snapshots": [],
+    "source": "nmap",
+    "state": "open",
+    "time": "2021-02-02 07:37:47"
+}

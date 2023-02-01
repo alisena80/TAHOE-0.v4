@@ -1,0 +1,296 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "aws-portal:*Billing",
+                "awsbillingconsole:*Billing",
+                "aws-portal:*Usage",
+                "awsbillingconsole:*Usage",
+                "aws-portal:*PaymentMethods",
+                "awsbillingconsole:*PaymentMethods",
+                "budgets:ViewBudget",
+                "budgets:ModifyBudget",
+                "cur:*",
+                "autoscaling:*",
+                "cloudwatch:*",
+                "logs:*",
+                "sns:*",
+                "dynamodb:*",
+                "dax:*",
+                "application-autoscaling:*",
+                "ec2:*",
+                "elasticloadbalancing:*",
+                "kms:*",
+                "elasticfilesystem:*",
+                "elasticmapreduce:*",
+                "glacier:*",
+                "kinesis:*",
+                "redshift:*",
+                "rds:*",
+                "sqs:*",
+                "s3:*",
+                "swf:*",
+                "cloudformation:*",
+                "cloudtrail:*",
+                "polly:*",
+                "lambda:*",
+                "support:*",
+                "lambda:*",
+                "support:*",
+                "ecr:*",
+                "ecs:*",
+                "es:*",
+                "apigateway:*",
+                "athena:*",
+                "codebuild:*",
+                "codecommit:*",
+                "codedeploy:*",
+                "config:*",
+                "dms:*",
+                "ds:*",
+                "elasticache:*",
+                "glue:*",
+                "inspector:*",
+                "iot:*",
+                "greengrass:*",
+                "kinesis:*",
+                "sms:*",
+                "servicecatalog:*",
+                "snowball:*",
+                "states:*",
+                "comprehend:*",
+                "guardduty:*",
+                "rekognition:*",
+                "sagemaker:*",
+                "transcribe:*",
+                "translate:*",
+                "license-manager:*",
+                "events:*",
+                "appstream:*",
+                "workspaces:*",
+                "ssm:*",
+                "trustedadvisor:*",
+                "resource-groups:*",
+                "sagemaker:*",
+                "mediaconvert:*",
+                "serverlessrepo:*",
+                "secretsmanager:*",
+                "batch:*",
+                "acm:*",
+                "outposts:*",
+                "cloudhsm:*",
+                "storagegateway:*",
+                "backup:*",
+                "codepipeline:*",
+                "securityhub:*",
+                "textract:*",
+                "ses:*",
+                "cognito-idp:*",
+                "cognito-sync:*",
+                "cognito-identity:*",
+                "eks:*",
+                "servicequotas:*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:AcceptVpcEndpointConnections",
+                "ec2:AcceptVpcPeeringConnection",
+                "ec2:AllocateAddress",
+                "ec2:AssociateDhcpOptions",
+                "ec2:AssociateSubnetCidrBlock",
+                "ec2:AssociateVpcCidrBlock",
+                "ec2:AttachClassicLinkVpc",
+                "ec2:AttachInternetGateway",
+                "ec2:AttachVpnGateway",
+                "ec2:CreateCustomerGateway",
+                "ec2:CreateDefaultSubnet",
+                "ec2:CreateDefaultVpc",
+                "ec2:CreateDhcpOptions",
+                "ec2:CreateEgressOnlyInternetGateway",
+                "ec2:CreateInternetGateway",
+                "ec2:CreateNatGateway",
+                "ec2:CreateRoute",
+                "ec2:CreateRouteTable",
+                "ec2:CreateVpc",
+                "ec2:CreateVpcEndpoint",
+                "ec2:CreateVpcEndpointConnectionNotification",
+                "ec2:CreateVpcEndpointServiceConfiguration",
+                "ec2:CreateVpcPeeringConnection",
+                "ec2:CreateVpnConnection",
+                "ec2:CreateVpnConnectionRoute",
+                "ec2:CreateVpnGateway",
+                "ec2:DeleteCustomerGateway",
+                "ec2:DeleteDhcpOptions",
+                "ec2:DeleteEgressOnlyInternetGateway",
+                "ec2:DeleteInternetGateway",
+                "ec2:DeleteNatGateway",
+                "ec2:DeleteRoute",
+                "ec2:DeleteRouteTable",
+                "ec2:DeleteVpc",
+                "ec2:DeleteVpcEndpointConnectionNotifications",
+                "ec2:DeleteVpcEndpointServiceConfigurations",
+                "ec2:DeleteVpcEndpoints",
+                "ec2:DeleteVpcPeeringConnection",
+                "ec2:DeleteVpnConnection",
+                "ec2:DeleteVpnConnectionRoute",
+                "ec2:DeleteVpnGateway",
+                "ec2:DetachClassicLinkVpc",
+                "ec2:DetachInternetGateway",
+                "ec2:DetachVpnGateway",
+                "ec2:DisableVgwRoutePropagation",
+                "ec2:DisableVpcClassicLink",
+                "ec2:DisableVpcClassicLinkDnsSupport",
+                "ec2:DisassociateRouteTable",
+                "ec2:DisassociateSubnetCidrBlock",
+                "ec2:DisassociateVpcCidrBlock",
+                "ec2:EnableVgwRoutePropagation",
+                "ec2:EnableVpcClassicLink",
+                "ec2:EnableVpcClassicLinkDnsSupport",
+                "ec2:ModifySubnetAttribute",
+                "ec2:ModifyVpcAttribute",
+                "ec2:ModifyVpcEndpoint",
+                "ec2:ModifyVpcEndpointConnectionNotification",
+                "ec2:ModifyVpcEndpointServiceConfiguration",
+                "ec2:ModifyVpcEndpointServicePermissions",
+                "ec2:ModifyVpcPeeringConnectionOptions",
+                "ec2:ModifyVpcTenancy",
+                "ec2:RejectVpcEndpointConnections",
+                "ec2:RejectVpcPeeringConnection",
+                "ec2:ReplaceRoute",
+                "ec2:ReplaceRouteTableAssociation"
+            ],
+            "Resource": "*",
+            "Effect": "Deny",
+            "Sid": "DenySpecificServices"
+        },
+        {
+            "Condition": {
+                "StringEquals": {
+                    "iam:PermissionsBoundary": "arn:aws-us-gov:iam::864906460266:policy/llnl-inf-permissions-boundary"
+                }
+            },
+            "Action": [
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:PutRolePermissionsBoundary",
+                "iam:TagRole",
+                "iam:UntagRole"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:iam::864906460266:role/LLNL_User_Roles_*",
+                "arn:aws-us-gov:iam::864906460266:role/llnl-user/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "SetPermissionsBoundaryRole"
+        },
+        {
+            "Condition": {
+                "ForAnyValue:StringEquals": {
+                    "aws:CalledVia": [
+                        "cloudformation.amazonaws.com"
+                    ]
+                }
+            },
+            "Action": [
+                "iam:ListRolePolicies",
+                "iam:ListAttachedRolePolicies",
+                "iam:GetRole",
+                "iam:ListRoleTags",
+                "iam:TagRole",
+                "iam:UntagRole",
+                "iam:DeleteRole",
+                "iam:ListInstanceProfiles",
+                "iam:ListInstanceProfilesForRole",
+                "iam:DetachRolePolicy"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:iam::864906460266:role/LLNL_User_Roles_*",
+                "arn:aws-us-gov:iam::864906460266:role/llnl-user/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "EditRoles"
+        },
+        {
+            "Action": [
+                "iam:CreateInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:TagInstanceProfile",
+                "iam:UntagInstanceProfile"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:iam::864906460266:role/LLNL_User_Roles_*",
+                "arn:aws-us-gov:iam::864906460266:instance-profile/LLNL_User_Roles_*",
+                "arn:aws-us-gov:iam::864906460266:role/llnl-user/*",
+                "arn:aws-us-gov:iam::864906460266:instance-profile/llnl-user/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "SetPermissionsBoundaryInstanceProfile"
+        },
+        {
+            "Action": [
+                "iam:CreatePolicy",
+                "iam:CreatePolicyVersion",
+                "iam:DeletePolicyVersion",
+                "iam:GetPolicyVersion",
+                "iam:GetPolicy",
+                "iam:DeletePolicy",
+                "iam:ListInstanceProfiles",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListEntitiesForPolicy",
+                "iam:ListPolicyVersions",
+                "iam:TagPolicy",
+                "iam:UntagPolicy"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:iam::864906460266:policy/LLNL_User_Policies_*",
+                "arn:aws-us-gov:iam::864906460266:policy/llnl-user/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "CreateAndEditPermissionsPolicy"
+        },
+        {
+            "Action": "iam:PassRole",
+            "Resource": [
+                "arn:aws-us-gov:iam::864906460266:role/LLNL_User_Roles_*",
+                "arn:aws-us-gov:iam::864906460266:role/llnl-user/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowPassRole"
+        },
+        {
+            "Action": "iam:PassRole",
+            "Resource": [
+                "arn:aws-us-gov:iam::*:role/aws-service-role/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowPassRoleServiceLinkedRolesv2"
+        },
+        {
+            "Action": "iam:CreateServiceLinkedRole",
+            "Resource": [
+                "arn:aws-us-gov:iam::*:role/aws-service-role/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowCreateServiceLinkedRoles"
+        },
+        {
+            "Action": [
+                "iam:DeleteServiceLinkedRole",
+                "iam:GetServiceLinkedRoleDeletionStatus"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:iam::*:role/aws-service-role/*"
+            ],
+            "Effect": "Allow",
+            "Sid": "AllowDeleteServiceLinkedRoles"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "stack_prefix": "tahoegarg42",                          # The stack prefix all 
+    "s3_prefix": "tahoe-garg42",                            # The s3 prefix 
+    "optional": {
+        "auto_delete_buckets": false,                       # Delete s3 buckets if stack is deleted should be falso for non dev env
+        "sync_cdk_to_etl_parameters": true                  # Uses the tahoe cli to sync parameters definitions to code files
+    },
+    "cdk_log_level": "INFO",                                # Synth/deploy logging level
+    "sandbox": false, 
+    "tags": {                                               # Tags to be applied to all tagable resources
+        "Version": "0.5.0",
+        "CostTag": "TAHOE-To5",
+        "LogTag": "LogTag"
+    },
+    "credentials": {                                        # Credential information required to get from datasources
+        "shodan_secret_key": "tahoegarg42ugw1_shodan",      # Shodan secret key
+        "shodan_base_url": "https://api.shodan.io/shodan/"  # Shodan url
+    },
+    "datasources": {                                        # Datasources present in nested stacks
+        "cdm": {            
+            "deploy": true                                  # To deploy nested stack or not
+        },
+        "nist_mitre": {
+            "deploy": true
+        },
+        "nvd": {
+            "deploy": true
+        },
+        "cyhy": {
+            "deploy": true
+        },
+        "shodan": {
+            "deploy": true
+        }
+    },
+    "redshift_schemas": {                                   # Schema name in redshift
+        "nvd": "nvd_garg4",
+        "cyhy": "cyhy_garg4"
+    }
+}

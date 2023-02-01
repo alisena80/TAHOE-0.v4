@@ -1,0 +1,3 @@
+awswrangler==2.14.0
+deepdiff==5.8.1
+pydeequ

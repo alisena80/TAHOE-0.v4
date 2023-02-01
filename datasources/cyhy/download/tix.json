@@ -1,0 +1,128 @@
+[{
+    "_id": "53b34962f0616e47630281eb",                          # Scan name
+    "details": {                                                # Vulnerability details
+        "cve": null,                                            # CVE ID
+        "cvss_base_score": 4.3,                                 # CVSS v2.0 base score
+          "name": "SSL Medium Strength Cipher Suites Supported",# Vulnerability name
+        "severity": 2                                           # CVSS v2.0 severity rating
+    },
+    "events": [                                                 # details of key ticket events
+        {
+            "action": "OPENED",                                 # Event type (OPENED=new, VERIFIED=verified if ticket is still open, CHANGED if data within ticket changed, CLOSED = vuln no longer detected, REOPENED = closed ticket reopenened, UNVERIFIED = vuld detected for ticket marked as false positive)
+            "reason": "backfill new",                           # Short description of the event
+            "reference": "50b3eae584fd523c5730235c",            # ID for vulnerability scan
+            "time": "2012-11-26 22:19:17"                       # Timestamp of event
+        },
+        {
+            "action": "CHANGED",                                # Event type
+            "delta": [                                          # List of what changed
+                {
+                    "from": null,                               # Value before change
+                    "key": "score_source",                      # Ticket field that changed
+                    "to": "nessus"                              # Value after change
+                }
+            ],
+            "reason": "details changed",                        # Description of event
+            "reference": "50b3eae584fd523c5730235c",            # ID for vulnerability scan
+            "time": "2012-11-26 22:19:17"                       # Timestamp of event
+        },
+        {
+            "action": "CLOSED",                                 # Event type
+            "reason": "host moved out of scope",                # Description of event
+            "reference": null,                                  # No ID
+            "time": "2015-06-01 13:46:25.835000"                # Timestamp of event
+        }
+    ],
+    "false_positive": false,                                    # Is the ticket marked as a false positive?
+    "ip": "7.181.203.86",                                       # IP address of the host that was vulnerability scanned
+    "ip_int": 129354582,                                        # Integer version of IP address
+    "last_change": "2015-06-01 13:47:59.804000",                # Timestamp of when ticket was last updated
+    "loc": [                                                    # Longitude and latitude of host
+        -56.50452633514905,
+        -35.34909853799866
+    ],
+    "open": false,                                              # Was the vulnerability detected in the last scan of the host?
+    "owner": "org9",                                            # Organization
+    "port": 443,                                                # Number of vulnerable point
+    "protocol": "tcp",                                          # Protocol of vulnerable port
+    "snapshots": [                                              # Snapshots that include this ticket
+        "5510309875417c8ce4f63ef5",
+        "551979510697f7c9241bd7ac",
+        "55228e1384fd52431aa8f1e7",
+        "552bd72b84fd5273138272b9",
+        "5534fd0684fd526be37c3468",
+        "553e38b384fd524412f7f58a",
+        "5547980384fd5262ecaaf646",
+        "5550a31184fd52477a77db05",
+        "5559f3b0ed4d0833ef60c313",
+        "55649ba184fd5252e7c89c59"
+    ],
+    "source": "nessus",                                         # Source of vulnerability scan
+    "source_id": 42873,                                         # Source-specific ID for vulnerability scan
+    "time_closed": "2015-06-01 13:46:25.835000",                # Timestamp when vulnerability was no longer detected
+    "time_opened": "2012-11-26 22:19:17"                        # Timestamp when vulnerability was first detected
+},{
+    "_id": "53b34962f0616e47630281ef", 
+    "details": {
+        "cve": null,
+        "cvss_base_score": 4.3,
+        "name": "SSL Weak Cipher Suites Supported",
+        "score_source": "nessus",
+        "severity": 2
+    },
+    "events": [
+        {
+            "action": "OPENED",
+            "reason": "backfill new",
+            "reference": "50b3eae584fd523c5730235b",
+            "time": "2012-11-26 22:19:17"
+        },
+        {
+            "action": "CHANGED",
+            "delta": [
+                {
+                    "from": null,
+                    "key": "score_source",
+                    "to": "nessus"
+                }
+            ],
+            "reason": "details changed",
+            "reference": "50b3eae584fd523c5730235b",
+            "time": "2012-11-26 22:19:17"
+        },
+        {
+            "action": "CLOSED",
+            "reason": "host moved out of scope",
+            "reference": null,
+            "time": "2015-06-01 13:46:25.835000"
+        }
+    ],
+    "false_positive": false,
+    "ip": "180.170.53.8",
+    "ip_int": 3031053576,
+    "last_change": "2015-06-01 13:48:00.287000",
+    "loc": [
+        -65.7007718912208,
+        31.622892764757694
+    ],
+    "open": false,
+    "owner": "org9",
+    "port": 443,
+    "protocol": "tcp",
+    "snapshots": [
+        "5510309875417c8ce4f63ef5",
+        "551979510697f7c9241bd7ac",
+        "55228e1384fd52431aa8f1e7",
+        "552bd72b84fd5273138272b9",
+        "5534fd0684fd526be37c3468",
+        "553e38b384fd524412f7f58a",
+        "5547980384fd5262ecaaf646",
+        "5550a31184fd52477a77db05",
+        "5559f3b0ed4d0833ef60c313",
+        "55649ba184fd5252e7c89c59"
+    ],
+    "source": "nessus",
+    "source_id": 26928,
+    "time_closed": "2015-06-01 13:46:25.835000",
+    "time_opened": "2012-11-26 22:19:17"
+}]

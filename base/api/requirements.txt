@@ -1,0 +1,8 @@
+flask
+flask-cors
+aws-wsgi
+boto3
+flasgger
+apispec
+apispec_webframeworks
+marshmallow

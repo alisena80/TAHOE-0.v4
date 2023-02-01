@@ -1,0 +1,43 @@
+{
+    "stack_prefix": "tahoegarg44",
+    "s3_prefix": "tahoe-garg44",
+    "optional": {
+        "auto_delete_buckets": false,
+        "sync_cdk_to_etl_parameters": true,
+        "console_role_name": "LLNL-USER-UNRESTRICTED-CT"
+    },
+    "cdk_log_level": "DEBUG",
+    "sandbox": false,
+    "tags": {
+        "Version": "0.5.0",
+        "CostTag": "TAHOE-To5",
+        "LogTag": "LogTag"
+    },
+    "datasources": {
+        "cdm": {
+            "deploy": false,
+            "log": false
+        },
+        "nist_mitre": {
+            "deploy": false,
+            "log": false
+        },
+        "nvd": {
+            "deploy": false,
+            "log": false
+        },
+        "cyhy": {
+            "deploy": false,
+            "log": false
+        },
+        "shodan": {
+            "deploy": false,
+            "log": false
+        }
+    },
+    "credentials": {},
+    "redshift_schemas": {
+        "nvd": "nvd_garg4",
+        "cyhy": "cyhy_garg4"
+    }
+}

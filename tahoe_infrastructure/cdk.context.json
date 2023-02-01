@@ -1,0 +1,201 @@
+{
+  "vpc-provider:account=637997685644:filter.vpc-id=vpc-6a4d0b12:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-6a4d0b12",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-b604f9fc",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-99885be1",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-eb9230b6",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-3ba4fe10",
+            "cidr": "172.31.48.0/20",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-e391b198"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=637997685644:region=us-west-2:securityGroupName=default:vpcId=vpc-6a4d0b12": {
+    "securityGroupId": "sg-72ebb159",
+    "allowAllOutbound": false
+  },
+  "vpc-provider:account=637997685644:filter.isDefault=true:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-6a4d0b12",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-b604f9fc",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-99885be1",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-eb9230b6",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-3ba4fe10",
+            "cidr": "172.31.48.0/20",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-e391b198"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=637997685644:filter.tag:TahoeVpc=true:region=us-west-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-6a4d0b12",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-b604f9fc",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "us-west-2a",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-99885be1",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-west-2b",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-eb9230b6",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-west-2c",
+            "routeTableId": "rtb-e391b198"
+          },
+          {
+            "subnetId": "subnet-3ba4fe10",
+            "cidr": "172.31.48.0/20",
+            "availabilityZone": "us-west-2d",
+            "routeTableId": "rtb-e391b198"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=637997685644:filter.isDefault=true:region=us-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-ac27dcca",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-8f5593d5",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-west-1b",
+            "routeTableId": "rtb-73443215"
+          },
+          {
+            "subnetId": "subnet-101eb476",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-west-1c",
+            "routeTableId": "rtb-73443215"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=637997685644:filter.tag:TahoeVpc=true:region=us-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-ac27dcca",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-8f5593d5",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "us-west-1b",
+            "routeTableId": "rtb-73443215"
+          },
+          {
+            "subnetId": "subnet-101eb476",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "us-west-1c",
+            "routeTableId": "rtb-73443215"
+          }
+        ]
+      }
+    ]
+  },
+  "vpc-provider:account=398592312202:filter.tag:TahoeVpc=true:region=us-gov-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0b2a6b87e2f720733",
+    "vpcCidrBlock": "10.220.36.0/22",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0c8a30ab4b183ce20",
+            "cidr": "10.220.36.0/23",
+            "availabilityZone": "us-gov-west-1a",
+            "routeTableId": "rtb-09f021d849842cb4e"
+          },
+          {
+            "subnetId": "subnet-05110e09db30310e6",
+            "cidr": "10.220.38.0/23",
+            "availabilityZone": "us-gov-west-1b",
+            "routeTableId": "rtb-09f021d849842cb4e"
+          }
+        ]
+      }
+    ]
+  },
+  "key-provider:account=637997685644:aliasName=alias/aws/s3:region=us-west-1": {
+    "keyId": "8a197245-0c25-4238-854f-b99fa65bdb07"
+  },
+  "key-provider:account=398592312202:aliasName=alias/aws/s3:region=us-gov-west-1": {
+    "keyId": "611fe4f3-7305-4fe6-8312-a1221087af16"
+  },
+  "key-provider:account=637997685644:aliasName=alias/aws/s3:region=us-west-2": {
+    "keyId": "16d614e8-edf7-4a06-a95c-6f751c334118"
+  }
+}

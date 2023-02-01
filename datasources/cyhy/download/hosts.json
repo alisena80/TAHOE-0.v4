@@ -1,0 +1,103 @@
+[{
+    "_id": "6029675f5de7cb43b41e9ba7", 
+    "accuracy": 89, 
+    "classes": [
+        {
+            "accuracy": "89", 
+            "cpe": [
+                "cpe:/o:linux:linux_kernel:3.10"
+            ], 
+            "osfamily": "Linux", 
+            "osgen": "3.X", 
+            "type": "general purpose", 
+            "vendor": "Linux"
+        }
+    ], 
+    "hostname": "org7", 
+    "ip": "39.232.66.199", 
+    "ip_int": 669532871, 
+    "latest": true, 
+    "line": 62928, 
+    "name": "Linux 3.10", 
+    "owner": "org7", 
+    "snapshots": [
+        "60298de59665574adaa73b0e"
+    ], 
+    "source": "nmap", 
+    "time": "2021-02-14 18:08:58"
+},{
+    "_id": "602a46155de7cb43b410d404", 
+    "accuracy": 98, 
+    "classes": [
+        {
+            "accuracy": "98", 
+            "cpe": [
+                "cpe:/o:microsoft:windows_server_2012:r2"
+            ], 
+            "osfamily": "Windows", 
+            "osgen": "2012", 
+            "type": "general purpose", 
+            "vendor": "Microsoft"
+        }
+    ], 
+    "hostname": "org6", 
+    "ip": "3.164.175.157", 
+    "ip_int": 61124509, 
+    "latest": true, 
+    "line": 75243, 
+    "name": "Microsoft Windows Server 2012 R2", 
+    "owner": "org6", 
+    "snapshots": [], 
+    "source": "nmap", 
+    "time": "2021-02-15 09:49:13"
+},{
+    "_id": "602c792e5de7cb43b4521e34", 
+    "accuracy": 94, 
+    "classes": [
+        {
+            "accuracy": "94", 
+            "cpe": [
+                "cpe:/o:linux:linux_kernel:3"
+            ], 
+            "osfamily": "Linux", 
+            "osgen": "3.X", 
+            "type": "general purpose", 
+            "vendor": "Linux"
+        }
+    ], 
+    "hostname": "org8", 
+    "ip": "196.173.57.13", 
+    "ip_int": 3299686669, 
+    "latest": true, 
+    "line": 63168, 
+    "name": "Linux 3.10 - 3.16", 
+    "owner": "org8", 
+    "snapshots": [], 
+    "source": "nmap", 
+    "time": "2021-02-17 01:43:28"
+},{
+    "_id": "602dc89b5de7cb43b44e49ea", 
+    "accuracy": 100, 
+    "classes": [
+        {
+            "accuracy": "100", 
+            "cpe": [
+                "cpe:/o:microsoft:windows_server_2012:r2"
+            ], 
+            "osfamily": "Windows", 
+            "osgen": "2012", 
+            "type": "general purpose", 
+            "vendor": "Microsoft"
+        }
+    ], 
+    "hostname": "org2", 
+    "ip": "72.229.248.250", 
+    "ip_int": 1223031034, 
+    "latest": true, 
+    "line": 75243, 
+    "name": "Microsoft Windows Server 2012 R2", 
+    "owner": "org2", 
+    "snapshots": [], 
+    "source": "nmap", 
+    "time": "2021-02-18 01:42:07"
+}]
